@@ -1,0 +1,84 @@
+:root {
+    font-family: 'Poppins', sans-serif;
+    --color-white: #ffffff;
+    --color-active: #466C7C;
+    --color-info: #6C9EB0;
+    --color-primary: #126D8D;
+    --color-dark-gray: #768D9C;
+    --color-success: #B1C4CD;
+    --color-gray: #D2CFCF;
+}
+.card-gradient {
+    background: linear-gradient(to right, #126d8d, #466C7C);
+  }
+  
+.notifications__area::-webkit-scrollbar {
+    width: 1px;
+    background: hsl(194, 92%, 40%);
+}
+
+main.Main {
+    background: linear-gradient(0deg, #057a7a57 100%, rgb(95 146 163 / 89%) 114.77%);
+}
+
+body {
+    min-height: 100dvh;
+    background: linear-gradient(to bottom, rgb(28, 42, 75) 0%, rgba(45, 133, 133, 0.842) 100%);
+
+}
+
+/* begin: sidenav */
+/* aside {
+    background: linear-gradient(180deg, #5B93A6 0%, rgba(0, 0, 0, 0) 114.77%);
+} */
+/* begin: sidenav */
+aside {
+    background: linear-gradient(180deg, #337d8b 100%, rgba(91, 147, 166, 1) 114.77%);
+}
+
+.accordion-button:is(.collapsed)::after,
+.accordion-button:not(.collapsed)::after {
+    content: unset;
+}
+
+.accordion-button:not(.collapsed) {
+    box-shadow: unset !important;
+}
+
+.accordion-button:is(:focus, :active) {
+    box-shadow: unset;
+}
+
+/* end: sidenav */
+
+.btn-primary,
+.btn-primary:is(:hover) {
+    background-color: var(--color-primary);
+    border-color: var(--color-primary);
+}
+
+.bg-info {
+    background-color: var(--color-info) !important;
+}
+
+.bg-dark-gray {
+    background-color: var(--color-dark-gray);
+}
+
+.bg-success {
+    background-color: var(--color-success) !important;
+}
+
+.bg-gray {
+    background-color: var(--color-gray);
+}
+
+.bg-cyan {
+    background-color: #079898;
+}
+
+@media (max-width: 768px) {
+    .hero__title {
+        font-size: 1.5rem !important;
+    }
+}
